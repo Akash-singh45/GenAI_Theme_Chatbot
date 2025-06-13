@@ -19,7 +19,8 @@ model = genai.GenerativeModel("gemini-pro")
 # ----------------------------
 # Load Sentence Transformer
 # ----------------------------
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+embedding_model = SentenceTransformer("all-MiniLM-L6-v2", device='cpu')
+
 
 # ----------------------------
 # Streamlit UI
